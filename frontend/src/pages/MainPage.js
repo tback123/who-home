@@ -1,7 +1,8 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import Navbar from "../components/Navbar";
-import SetStatus from "../components/SetStatus";
+import PersonStatuses from "../components/PersonStatuses";
+import people from "../data/people";
 
 const MainPage = () => {
   return (
@@ -11,10 +12,10 @@ const MainPage = () => {
         direction="column"
         justify="flex-start"
         spacing={0}
-        style={{overflowX: "hidden", overflowY: "hidden"}}
+        style={{ overflowX: "hidden", overflowY: "hidden" }}
       >
-          <Navbar />
-          <SetStatus />
+        <Navbar />
+        <PersonStatuses people={people} />
       </Grid>
     </>
   );
