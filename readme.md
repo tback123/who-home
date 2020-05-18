@@ -56,11 +56,3 @@ The following user stories define the functionality of the system
 
 |auth/passwordreset/reset|POST|(reset_code, new_password)|{}|**InputError** when any of:<ul><li>reset_code is not a valid reset code</li><li>Password entered is not a valid password</li></ul>|Given a reset code for a user, set that user's new password to the password provided|
 
-
-
-
-### Data Stuctures
-| Named | Type |
-| ----- | ---- |
-| "status"| "home" OR "not_home" OR "home_with_extras" |
-| "members"| A list of dictionaries of each member where each dictionary contains {name_first, status}|
