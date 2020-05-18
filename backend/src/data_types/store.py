@@ -31,7 +31,7 @@ class Store:
 
         return return_lst
 
-    def get_household_list(self):
+    def get_households_list(self):
         ''' Returns list of dictionaries of household '''
         return_lst = []
         for house in self.__households.find():
