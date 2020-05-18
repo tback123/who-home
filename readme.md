@@ -46,8 +46,4 @@ The following user stories define the functionality of the system
 
 |HTTP Route|HTTP Method|Parameters|Return type|Exceptions|Description|
 |------------|-------------|-------------|----------|-----------|----------|
-|auth/login|POST|(email, password)|{ u_id, token }|**InputError** when any of:<ul><li>Email entered is not a valid email using the method provided (unless you feel you have a better method)</li><li>Email entered does not belong to a user</li><li>Password is not correct</li></ul> | Given a registered users' email and password and generates a valid token for the user to remain authenticated |
-
-|auth/logout | POST | (token) | { is_success } | N/A | Given an active token, invalidates the taken to log the user out. If a valid token is given, and the user is successfully logged out, it returns true, otherwise false.|
-
-
+| auth/logout | POST | (token) |{ is_success } | No exceptions | Given an active token, invalidates to log user out. If a valid token is given and the user is sucessfully logged out, it returns true, otherwise, false.|
