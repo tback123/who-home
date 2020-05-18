@@ -54,8 +54,12 @@ The following user stories define the functionality of the system
 |status/set| PUT | (token, u_id, house_id, new_status) | {is_success} | **InputError** when any of: <ul><li>Token is invalid</li><li>u_id is invalid</li><li>Status is not valid</li><li>User doesn't exist within the house</li></ul> **Access Error** <ul><li>If token doesn't match assigned u_id and not family admin (So a user can only set their own home status)</li> </ul> | Sets status for given u_id |
 | status/get_all | GET | (token, house_id) | {members} | **InputError** <ul><li>Invalid Token</li><li>Invalid House id</li> </ul> **AccessError** <ul><li>Token is not authorised in specified house_id</li> </ul> | Returns all the members in the house hold and their current statuses|
 |household/create|POST| (token, household_name)| {is_success} |  **InputError** <ul><li>Invalid Token</li></ul> | Creates a new household |
-|household/add_member| POST | (token, house_id, email)| {is_success} | **InputError** <ul><li>Invalid Token</li><li>Invalid House id</li><li>Not a registered email</li></ul>| Adds registered memeber to existiing household|
+|household/add_member| PUT | (token, house_id, email)| {is_success} | **InputError** <ul><li>Invalid Token</li><li>Invalid House id</li><li>Not a registered email</li></ul>| Adds registered memeber to existing household. User that creates the household, is an admin of that househould.|
 |household/remove_member| DELETE | (token, house_id, email)| {is_success} | **InputError** <ul><li>Invalid Token</li><li>Invalid House id</li><li>Requesting user is not in that household</li><li>Not an email in the current household</li></ul>| Removed registered memeber to existiing household|
+|household/add_admin| PUT | (token, house_id, email_to_add)  | {is_success} | **InputError** <ul><li>Invalid Token</li><li>Invalid House id</li><li>Requesting user is not an admin of that household</li><li>Requesting user is not in that household</li><li>email_to_add is not in the current household</li></ul> | Adds an admin to an existing household |
+|household/remove_admin| DELETE | (token, house_id, email_to_remove)  | {is_success} | **InputError** <ul><li>Invalid Token</li><li>Invalid House id</li><li>Requesting user is not an admin of that household</li><li>Requesting user is not in that household</li><li>email_to_add is not in the current household</li></ul> | Adds an admin to an existing household |
+
+
 ### Data Stuctures
 
 | Named | Type |
