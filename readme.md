@@ -12,7 +12,7 @@ The following user stories define the functionality of the system
 - React
 - Material UI
 
-## Backend
+### Backend
 
 - Django (Currently)
 - Flask (In transition)
@@ -26,3 +26,4 @@ The following user stories define the functionality of the system
 - As a parent, I want to choose a specific time by which people have to choose if they're home, so that i am able to do the shopping for dinner.
 - As a memeber of the house hold, I want to be able to choose who my plus one is, so that other know what to expect.
 - As a family orginiser, I want to be able to say whats for dinner, So that people can decide if they want to come.
+- As a forgetful person, I want to be able to automate the process of checking and unchecking my status at home through our home Wi-Fi.
