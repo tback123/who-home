@@ -6,7 +6,7 @@ The following user stories define the functionality of the system
 
 ## Technology stack
 
-### Frontend 
+### Frontend
 
 - Javascript
 - React
@@ -14,9 +14,8 @@ The following user stories define the functionality of the system
 
 ### Backend
 
-- Django (Currently)
-- Flask (In transition)
-
+- Django (Previously)
+- Flask (Currently)
 - MongoDB (In Plans)
 
 ## User stories
