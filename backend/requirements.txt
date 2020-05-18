@@ -1,0 +1,5 @@
+# Who-home
+flask
+flask-cors
+pyjwt
+pymongo
