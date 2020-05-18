@@ -54,7 +54,7 @@ The following user stories define the functionality of the system
 
 |auth/passwordreset/request|POST|(email)|{}|N/A|Given an email address, if the user is a registered user, send's them a an email containing a specific secret code, that when entered in auth_passwordreset_reset, shows that the user trying to reset the password is the one who got sent this email.|
 
-|auth/passwordreset/reset|POST|(reset_code, new_password)|{}|**InputError** when any of:<ul><li>reset_code is not a valid reset code</li><li>Password entered is not a valid password</li>|Given a reset code for a user, set that user's new password to the password provided|
+|auth/passwordreset/reset|POST|(reset_code, new_password)|{}|**InputError** when any of:<ul><li>reset_code is not a valid reset code</li><li>Password entered is not a valid password</li></ul>|Given a reset code for a user, set that user's new password to the password provided|
 
 |status/set| PUT | (token, u_id, house_id, new_status) | {is_success} | **InputError** when any of: <ul><li>Token is invalid</li><li>u_id is invalid</li><li>Status is not valid</li><li>User doesn't exist within the house</li></ul> **Access Error** <ul><li>If token doesn't match assigned u_id and not family admin (So a user can only set their own home status)</li> </ul> | Sets status for given u_id |
 
