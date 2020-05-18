@@ -55,7 +55,7 @@ The following user stories define the functionality of the system
 | status/get_all | GET | (token, house_id) | {members} | **InputError** <ul><li>Invalid Token</li><li>Invalid House id</li> </ul> **AccessError** <ul><li>Token is not authorised in specified house_id</li> </ul> | Returns all the members in the house hold and their current statuses|
 |household/create|POST| (token, household_name)| {is_success} |  **InputError** <ul><li>Invalid Token</li></ul> | Creates a new household |
 |household/add_member| POST | (token, house_id, email)| {is_success} | **InputError** <ul><li>Invalid Token</li><li>Invalid House id</li><li>Not a registered email</li></ul>| Adds registered memeber to existiing household|
-|household/add_member| DELETE | (token, house_id, email)| {is_success} | **InputError** <ul><li>Invalid Token</li><li>Invalid House id</li><li>Requesting user is not in that household</li><li>Not an email in the current household</li></ul>| Removed registered memeber to existiing household|
+|household/remove_member| DELETE | (token, house_id, email)| {is_success} | **InputError** <ul><li>Invalid Token</li><li>Invalid House id</li><li>Requesting user is not in that household</li><li>Not an email in the current household</li></ul>| Removed registered memeber to existiing household|
 ### Data Stuctures
 
 | Named | Type |
