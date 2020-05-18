@@ -6,26 +6,33 @@ export const PersonStatus = ({ person: defaultPerson }) => {
   const { name, status } = person;
 
   const setStatus = useCallback(
-    newStatus => {
+
+    (newStatus) => {
       setPerson({
         ...person,
         status: newStatus
       });
-      // Call API
+      
+    // Call API
+
     },
+
     [name, status]
   );
 
+
   return (
     <Grid container item xs spacing={3} justify="center" alignItems="center">
+      
       <Grid item>
-        <Paper>Name is: {name}</Paper>
-        <Paper>Home status is: {status}</Paper>
+        <Paper elevation={0}>Name is: {name}</Paper>
+        <Paper elevation={0}>Home status is: {status}</Paper>
       </Grid>
+
       <Grid item>
         <Button
           variant={status === "home" ? "contained" : "outlined"}
-          color="primary"
+          color="secondary"
           onClick={() => setStatus("home")}
         >
           Home
