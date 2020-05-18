@@ -39,6 +39,25 @@ class Store:
 
         return return_lst
 
+    def add_user(self, u_id, email, password, name_first, name_last, token):
+        ''' Add a user '''
+
+        self.__users.insert_one({
+            'u_id': u_id,
+            'password': password,
+            'name_first': name_first,
+            'name_last': name_last,
+            'token': token
+        })
+
+    def add_household(self, h_id, household_name, owner_ids):
+        ''' Add a household '''
+        self.__households.insert_one({
+            'h_id': h_id,
+            'household_name': household_name,
+            'owner_ids': owner_ids
+        })
+
     def update_one_user(self, u_id, new_attribute_dict):
         '''
             Given a user_id, will update that specific user's attribute, 
