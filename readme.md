@@ -27,3 +27,13 @@ The following user stories define the functionality of the system
 - As a memeber of the house hold, I want to be able to choose who my plus one is, so that other know what to expect.
 - As a family orginiser, I want to be able to say whats for dinner, So that people can decide if they want to come.
 - As a forgetful person, I want to be able to automate the process of checking and unchecking my status at home through our home Wi-Fi.
+
+## Functional Requirements
+
+- Ability for each member of the family to login with a username and password
+
+## API 
+
+| Route | Params | Returns |
+|-------|--------|---------|
+| Test| (arg1, arg2) | {value} |
