@@ -76,6 +76,5 @@ class Store:
 STORE = Store()
 
 def get_store():
-    ''' Return the global store '''
-    global STORE
+    ''' Returns the store '''
     return STORE

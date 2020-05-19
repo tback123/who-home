@@ -10,7 +10,7 @@
 BACKEND_URL = 'http://127.0.0.1:8080'
 
 '''
-Data Base settings
+    Data Base settings
 '''
 # Server Address
 MONGODB_URL = 'mongodb://localhost:27017'
@@ -18,9 +18,15 @@ MONGODB_URL = 'mongodb://localhost:27017'
 MONGODB_NAME = 'who-home'
 
 '''
-Config used for the service emails
+    Config used for the service emails
 '''
 SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = 587
 SMTP_EMAIL = ""
 SMTP_PASSWORD = ""
+
+
+'''
+    Encryption Secrets
+'''
+TOKEN_SECRET = "PUT A SECRET HERE"
