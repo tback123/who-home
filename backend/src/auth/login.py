@@ -14,7 +14,7 @@ def auth_login(email, password):
     email, password = arg_helper.strip_all_args((email, password))
     arg_helper.check_no_white_space((email,password))
 
-    validate_new_email(email)
+    email_helper.validate_new_email(email)
 
     
 
