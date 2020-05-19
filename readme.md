@@ -24,20 +24,25 @@ In the `backend` folder, rename the `secrets_temple.py` to `secrets.py`.
 Fill in the config as documented in that file.
 
 ### Start the frontend
-Change in the frontend folder
+Change in the frontend folder:  
 `cd frontend/`
-Install Packages:
+
+Install Packages:  
 `npm install'
-Run the frontend server
+
+Run the frontend server:  
 `npm start`
 
 ### Start the backend
-in a new terminal, navigate to the root directory then change into the backend folder
+in a new terminal, navigate to the root directory then change into the backend folder:  
 `cd backend/`
-Install Requirements
+
+Install Requirements  
 `pip3 install -r requirements.txt`
-Run Server
+
+Run Server:  
 `python3 server.py`
+
 
 ## User stories
 
