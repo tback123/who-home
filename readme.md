@@ -34,7 +34,7 @@ Run the frontend server:
 `npm start`
 
 ### Start the backend
-in a new terminal, navigate to the root directory then change into the backend folder:  
+In a new terminal, navigate to the root directory then change into the backend folder:  
 `cd backend/`
 
 Install Requirements  
