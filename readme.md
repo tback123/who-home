@@ -18,6 +18,27 @@ The following user stories define the functionality of the system
 - Flask (Currently)
 - MongoDB (In Plans)
 
+## How to use 
+### First time setup
+In the `backend` folder, rename the `secrets_temple.py` to `secrets.py`.
+Fill in the config as documented in that file.
+
+### Start the frontend
+Change in the frontend folder
+`cd frontend/`
+Install Packages:
+`npm install'
+Run the frontend server
+`npm start`
+
+### Start the backend
+in a new terminal, navigate to the root directory then change into the backend folder
+`cd backend/`
+Install Requirements
+`pip3 install -r requirements.txt`
+Run Server
+`python3 server.py`
+
 ## User stories
 
 - As a parent, I want to see who will be home each night in advance, so that I can arrange dinner.
