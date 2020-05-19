@@ -19,11 +19,14 @@ The following user stories define the functionality of the system
 - MongoDB (In Plans)
 
 ## How to use 
+
 ### First time setup
+
 In the `backend` folder, rename the `secrets_temple.py` to `secrets.py`.
 Fill in the config as documented in that file.
 
 ### Start the frontend
+
 Change in the frontend folder:  
 `cd frontend/`
 
@@ -34,6 +37,7 @@ Run the frontend server:
 `npm start`
 
 ### Start the backend
+
 In a new terminal, navigate to the root directory then change into the backend folder:  
 `cd backend/`
 
@@ -42,7 +46,6 @@ Install Requirements
 
 Run Server:  
 `python3 server.py`
-
 
 ## User stories
 
