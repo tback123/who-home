@@ -44,6 +44,7 @@ class Store:
 
         self.__users.insert_one({
             'u_id': u_id,
+            'email': email,
             'password': password,
             'name_first': name_first,
             'name_last': name_last,
